@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetails">
+
+    <TextView
+        android:id="@+id/TV_orderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="152dp"
+        android:fontFamily="@font/mulish_bold"
+        android:text="order000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toEndOf="@+id/IB_Back5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/IB_Back5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_back" />
+
+    <TextView
+        android:id="@+id/TV_C_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/mulish_medium"
+        android:text="Customer name: xxx"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/IB_Back5"
+        app:layout_constraintTop_toBottomOf="@+id/TV_orderId" />
+
+    <TextView
+        android:id="@+id/TV_C_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/mulish_medium"
+        android:text="Customer Id: mmbbnn"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/TV_C_name"
+        app:layout_constraintTop_toBottomOf="@+id/TV_C_name" />
+
+    <TextView
+        android:id="@+id/TV_C_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/mulish_medium"
+        android:text="Email : john123@gmail.com"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/TV_C_Id"
+        app:layout_constraintTop_toBottomOf="@+id/TV_C_Id" />
+
+    <TextView
+        android:id="@+id/TV_orderId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/mulish_semibold"
+        android:text="orderId"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/TV_C_email"
+        app:layout_constraintTop_toBottomOf="@+id/TV_C_email" />
+
+    <TextView
+        android:id="@+id/TV_orderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/mulish_semibold"
+        android:text="Order date: 20340701829"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/TV_orderId2"
+        app:layout_constraintTop_toBottomOf="@+id/TV_orderId2" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/mulish_semibold"
+        android:text="Order Details:"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/TV_orderDate"
+        app:layout_constraintTop_toBottomOf="@+id/TV_orderDate" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mulish_bold"
+        android:text="Quantity"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/mulish_bold"
+        android:text="Product Name"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderProductList"
+        android:layout_width="361dp"
+        android:layout_height="362dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:paddingTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <ImageButton
+        android:id="@+id/IB_donePacking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderProductList"
+        app:srcCompat="@drawable/btn_done_packed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

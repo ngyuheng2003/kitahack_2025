@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">kitaHack2025</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="detect_type_array">
+        <item>Barcode</item>
+        <item>Vegetable / Fruit</item>
+        <item>Receipt</item>
+    </string-array>
+</resources>
